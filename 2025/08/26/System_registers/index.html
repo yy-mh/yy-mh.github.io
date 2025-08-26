@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html 
+	lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+<link rel="stylesheet" href="/css/layout.css">
+
+		
+		<title> 一叶梦花的博客</title>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		
+<link rel="stylesheet" href="/lib/mdui/mdui.min.css">
+
+		
+<script src="/lib/mdui/mdui.min.js"></script>
+
+		<!-- lazyload -->
+		
+<script src="/lib/lazysizes.js"></script>
+
+		<!-- smooth-scrolling -->
+		
+<script src="/lib/smooth-scrolling.js"></script>
+
+		<!-- highlight -->
+		
+<link rel="stylesheet" href="/lib/highlight/atom-one-dark.min.css">
+
+		
+<script src="/lib/highlight/highlight.min.js"></script>
+
+		<!-- 预置 kiraicon -->
+		
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+
+		
+		<link
+			rel="shortcut icon"
+			href="https://s2.loli.net/2025/08/25/hyUAMOTXuEKJVtn.png"
+			type="image/png"
+		/>
+		
+<link rel="stylesheet" href="/deps/css/APlayer.min.css">
+
+		
+		
+<script src="/deps/js/APlayer.min.js"></script>
+<script src="/deps/js/Meting.min.js"></script>
+
+	<meta name="generator" content="Hexo 7.2.0"></head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('https://s2.loli.net/2025/08/25/1OVBFCj9w63Q5pZ.jpg')"
+		></div>
+		<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="一叶梦花的博客">
+        <img
+			src="https://s2.loli.net/2025/08/25/hyUAMOTXuEKJVtn.png"
+			alt="一叶梦花"
+		/>
+    </a>
+</div>
+		<div class="kira-body">
+			<div class="kira-sidebar" id="sidebar">
+	<div class="kira-avatar mdui-ripple">
+		<a target="_blank" rel="noopener" href="https://s2.loli.net/2025/08/25/hyUAMOTXuEKJVtn.png" title="一叶梦花">
+			<img
+				src="https://s2.loli.net/2025/08/25/hyUAMOTXuEKJVtn.png"
+				alt="一叶梦花"
+			/>
+		</a>
+	</div>
+	<div class="kira-count">
+		<div><span>文章</span>3</div>
+		<div><span>标签</span>2</div>
+		<div><span>分类</span>0</div>
+	</div>
+	<div class="kira-list">
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/"
+			title="回到首页"
+		>
+			<i
+				class="kirafont
+					
+						icon-home
+					"
+			></i>
+			<div class="kira-list-item-content">
+				回到首页
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/archive.html"
+			title="文章归档"
+		>
+			<i
+				class="kirafont
+					
+						icon-container
+					"
+			></i>
+			<div class="kira-list-item-content">
+				文章归档
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/about.html"
+			title="关于本人"
+		>
+			<i
+				class="kirafont
+					
+						icon-user
+					"
+			></i>
+			<div class="kira-list-item-content">
+				关于本人
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/friends.html"
+			title="我的朋友"
+		>
+			<i
+				class="kirafont
+					
+						icon-team
+					"
+			></i>
+			<div class="kira-list-item-content">
+				我的朋友
+			</div>
+		</a>
+		
+	</div>
+	<aside id="kira-sidebar">
+		
+			<div class="kira-widget-wrap">
+	<div class="kira-widget kira-social">
+		
+			<a
+				class="mdui-ripple"
+				href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2174107071&website=www.oicqzone.com"
+				target="_blank"
+				mdui-tooltip="{content: 'QQ'}"
+				style="color: rgb(49, 174, 255); background-color: rgba(49, 174, 255, .1);"
+			>
+				<i
+					class="kirafont
+					
+						icon-QQ
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://space.bilibili.com/450877943"
+				target="_blank"
+				mdui-tooltip="{content: '哔哩哔哩'}"
+				style="color: rgb(231, 106, 141); background-color: rgba(231, 106, 141, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-bilibili
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://github.com/yy-mh/"
+				target="_blank"
+				mdui-tooltip="{content: 'GitHub'}"
+				style="color: rgb(25, 23, 23); background-color: rgba(25, 23, 23, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-github
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://gitee.com/<你的gitee id>"
+				target="_blank"
+				mdui-tooltip="{content: 'Gitee'}"
+				style="color: rgb(165, 15, 15); background-color: rgba(165, 15, 15, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-gitee
+					"
+				></i>
+			</a>
+		
+	</div>
+</div>
+
+		
+			
+		
+			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/tags/%E4%B9%A6%E8%AF%84/" style="font-size: 10px;">书评</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 10px;">杂谈</a>
+		</div>
+		
+	</div>
+
+
+		
+			
+	<div class="kira-widget-wrap">
+		<h3 class="kira-widget-title">
+			文章归档
+		</h3>
+		<div class="kira-widget">
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">2</span></li></ul>
+		</div>
+	</div>
+
+
+		
+	</aside>
+	<div class="kira-copyright">
+		&copy; 2025
+		<a href="/">一叶梦花</a>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
+		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
+		<br />
+		
+		
+	</div>
+</div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					
+<link rel="stylesheet" href="/css/kira-image.css">
+
+
+<script src="/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
+                </div>
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
+            </div>
+        </div>
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<link rel="stylesheet" href="/css/kira-code-copy.css">
+
+	
+<script src="/js/kira-code-copy.js"></script>
+
+
+<div class="kira-post">
+	<article>
+		
+		<div
+			class="kira-post-cover"
+			style="padding-bottom: '56.25%'"
+		>
+			<img
+				data-src="https://s2.loli.net/2025/08/25/1OVBFCj9w63Q5pZ.jpg"
+				data-sizes="auto"
+				alt=""
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1></h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2025年08月26日</a>
+			<a><i class="kirafont icon-edit-fill"></i>3.2k 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 14 分钟</a>
+		</div>
+		<p>咕咕咕</p>
+<h1><span id="1instruction">1.Instruction</span></h1><p>Linux kernel提出了如smep smap kaslr CR-pining 和 NX-Physmap等缓解控制流劫持的保护措施，仍有各种攻击技术（ret2usr ret2dir retspill）被不断发现</p>
+<p>几年前，google团队发布了一个覆盖cr4寄存器来禁用smap和smep的漏洞，换种角度来看，内核中的大多数漏洞利用在通过通用寄存器来索引内存或者参数传递与用户空间漏洞没有区别，但是内核有使用特别的东西：系统寄存器</p>
+<p>Such as cr寄存器以及EFLAGS(某些值可以关闭smap)这种在内核模式中有特殊含义的寄存器</p>
+<p>总之，作者分析了x86_64和aarch64下系统寄存器在控制流劫持下能起到的作用以及展示了7种技术，最后新提出的技术依赖swapgs指令并劫持<code>KERNEL_GSBASE_MSR</code>系统寄存器，可以绕过FinelBT缓解措施（类似CFI，防御ROP和JOP）</p>
+<p>本文贡献：</p>
+<ul>
+<li>提出System register hijacking</li>
+<li>通过poc和cve验证了可行性</li>
+<li>提出防护措施和缓解措施</li>
+</ul>
+<h1><span id="2background">2.Background</span></h1><h2><span id="21-control-flow-hijacking">2.1 Control Flow Hijacking</span></h2><p>一般使用类似pop rsp,val or mov rsp 等gadget将控制流劫持到kernel 堆或者栈的可控区域，然后提权正常返回用户态</p>
+<h2><span id="22-control-flow-integrity">2.2 Control Flow Integrity</span></h2><p>Linux 内核支持一种基于软件的控制流完整性（CFI）解决方案，称为 <strong>kCFI</strong>，旨在防止前向控制流劫持。</p>
+<p>kCFI 在编译时为函数和间接控制流发生的位置分配标签，然后在调用时比较调用点的标签与目标的标签，以确保目标合法。已有研究发现，一些 kCFI 下的间接控制流并没有验证目标，使得 kCFI 在这方面并不完全有效。目前，kCFI 并未在主流 Linux 桌面和服务器发行版中启用，但在 Android 上是启用的。</p>
+<p>现代 Intel x86-64 处理器支持硬件级的 CFI 保护：前向边保护通过 <strong>IBT</strong>，后向边保护通过 <strong>Shadow Stack</strong>。</p>
+<ul>
+<li>IBT：<code>endbr64</code> 指令，现代提供更精细的 <strong>FineIBT</strong>，提供software checks</li>
+<li>Shadow Stack：一个内存区域去存储原本的栈帧，如果比对失败则报错</li>
+</ul>
+<h2><span id="23-kaslr-bypass">2.3 kaslr bypass</span></h2><p>由于各种架构的测信道存在，开启与否并无影响，认为与本地攻击场景无关，可以不开启</p>
+<h2><span id="24-smap-and-pan-bypasses">2.4 SMAP and PAN Bypasses</span></h2><p>用户数据不可访问</p>
+<h2><span id="25-kernel-page-table-isolation">2.5 Kernel Page Table Isolation</span></h2><p>KPTI，简单来说如图所示，内核用户页表分隔</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://xxhqd1bk0q6.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmQ3NTFjN2I1MGNlMDg3Y2FlMDFjNThjNjY2MDA0YjhfdXpMTG5UdW85dmJDYnNoN3J2MmZXbWxaRG1jbXk5VndfVG9rZW46WHI0M2JLREJkb1owS0h4RUNjVGNOblljbjFmXzE3NTYxNzg1Mjk6MTc1NjE4MjEyOV9WNA" alt="img" class="lazyload"></p>
+<h2><span id="26-x86-64-fsgsbase-extension">2.6 x86-64 FSGSBASE Extension</span></h2><p>这个扩展支持了用户态对gsbase和fsbase直接读取和修改的指令</p>
+<p>文章引用cve-2019-1125，我印象中这个指令在CTF中也被使用过<a target="_blank" rel="noopener" href="https://blog.zolutal.io/corctf-sysruption/">corCTF 2023: sysruption writeup</a>，而这篇blog作者似乎与论文作者都是同一个学校（笑，orz）</p>
+<h2><span id="27-per-cpu">2.7 per-cpu</span></h2><p><strong>GSBase → 指向当前 CPU 的 per-CPU 数据块的基地址</strong></p>
+<p>per-cpu保存了例如线程栈，task_struct，stack canary</p>
+<p>gsbase+offset来访问各个成员</p>
+<p>And more，GSBase 寄存器也可用于用户态程序，进入和退出内核时，<strong>swapgs 指令用于在用户 gsbase 和内核 gsbase 之间切换</strong></p>
+<h2><span id="28-privileged-instructions-for-rop">2.8 Privileged Instructions for ROP</span></h2><p>内核rop利用，先前通过<code>native_write_cr4</code>的gaget进行关闭smap smep保护，后来CR-Pinning下面添加了检测（如下代码）</p>
+<p>但是整个内核中还有额外的没有保护的cr4 gadget可以被拿来利用</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">void</span> __no_profile <span class="hljs-title function_">native_write_cr4</span><span class="hljs-params">(<span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> val)</span><br>&#123;<br>    <span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> bits_changed = <span class="hljs-number">0</span>;<br><br>set_register:<br>    <span class="hljs-keyword">asm</span> <span class="hljs-title function_">volatile</span><span class="hljs-params">(<span class="hljs-string">&quot;mov %0,%%cr4&quot;</span> : <span class="hljs-string">&quot;+r&quot;</span> (val) : : <span class="hljs-string">&quot;memory&quot;</span>)</span>;<br><br>    <span class="hljs-keyword">if</span> (static_branch_likely(&amp;cr_pinning)) &#123;<br>        <span class="hljs-keyword">if</span> (unlikely((val &amp; cr4_pinned_mask) != cr4_pinned_bits)) &#123;<br>            bits_changed = (val &amp; cr4_pinned_mask) ^ cr4_pinned_bits;<br>            val = (val &amp; ~cr4_pinned_mask) | cr4_pinned_bits;<br>            <span class="hljs-keyword">goto</span> set_register;<br>        &#125;<br>        <span class="hljs-comment">/* Warn after we&#x27;ve corrected the changed bits. */</span><br>        WARN_ONCE(bits_changed, <span class="hljs-string">&quot;pinned CR4 bits changed: 0x%lx!?\n&quot;</span>,<br>                  bits_changed);<br>    &#125;<br>&#125;<br><br><span class="hljs-meta">#<span class="hljs-keyword">if</span> IS_MODULE(CONFIG_LKDTM)</span><br>EXPORT_SYMBOL_GPL(native_write_cr4);<br><span class="hljs-meta">#<span class="hljs-keyword">endif</span></span><br></code></pre></td></tr></table></figure>
+
+<h1><span id="3system-register-search">3.System register search</span></h1><p>在开启了常见保护（SMEP、SMAP、KPTI、NX-physmap、CR Pinning、STATIC_USERMODE_HELPER、RANDKSTACK 和 STACK CANARY）以及CFI的内核中，作者进行了对于system register的gadget查找并对angr做了一定的修改进行了验证</p>
+<p>iret和calc对cr4的操作都是无效的，并不能完成关闭smap等行为</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://s2.loli.net/2025/08/26/oaWnNL2zyCeApbq.jpg" alt="img" class="lazyload"></p>
+<h1><span id="4system-register-hijacking-techniques">4.System Register Hijacking Techniques</span></h1><p>这里主要讲述了提出的利用手法，仍需结合exp去理解</p>
+<h2><span id="41-x86-64-swapgs-stack-pivoting">4.1 x86-64: swapgs Stack Pivoting</span></h2><p><code>swapgs</code> 指令通常出现在内核的入口、退出以及其他中断处理代码中。它会交换两个系统寄存器的值：<code>GSBase</code> 寄存器和 <code>KernelGSBase</code> 寄存器。</p>
+<ul>
+<li>在用户态，通过 <code>wrgsbase</code> 指令（用户态可以访问）设置 <code>GSBase</code>，那么当内核入口执行 <code>swapgs</code> 时，<code>KernelGSBase</code> 就会被设置为用户态的那个值（也就是之前<code>wrgsbase</code>写入的值）。</li>
+</ul>
+<p>执行 <code>swapgs</code> gadget 的结果是，内核中用于存放 per-cpu 变量的内存指针（即 <code>GSBase</code> 指向的内存）可以被攻击者重定向到自己控制的地址。</p>
+<p>有些 <code>swapgs</code> gadget（例如 <code>swapgs; ret</code>）不太实用，因为内核栈保护的 Canary 值存储在 per-cpu 变量中，如果调用者返回时 Canary 校验失败，内核可能会崩溃。</p>
+<p>作者发现许多 <code>swapgs</code> gadget 执行后，会把从 per-cpu 变量读取的值写入rsp。通常，内核从用户态进入做这一步骤，以切换到内核栈。</p>
+<p>如果劫持执行流程跳转到这些 gadget，就会因为栈指针被设置为攻击者控制的 per-cpu 变量里的值，从而实现<strong>栈切换（stack pivot）</strong></p>
+<p>要使这种技术生效，攻击者必须能够在内核地址空间中伪造一个 <strong>per-CPU 结构</strong>，以便 <code>GSBase</code> 可以指向它。 可以通过以下两种方式满足这一条件：</p>
+<ul>
+<li>泄露一个<strong>可控页面</strong>的地址</li>
+<li>通过 <strong>透明大页（Transparent Huge Page，THP）</strong> 喷射来实现（madvise会使内核分配物理内存区域给它，做到了用户页面拥有内核区域映射）</li>
+</ul>
+<blockquote>
+<p>主要问题就在这里，物理直接映射地址不确定，这个地址只能根据大致范围来guess一个</p>
+</blockquote>
+<p>THP 在物理内存中是 <strong>2MB 对齐</strong> 的，这使用户能够在内核物理内存映射的大范围区域中填充可控页面。 而要在物理内存映射中稳定地猜测可控页面的地址，还依赖于已知内核物理内存映射的基地址，这个基地址可以通过泄露信息或<strong>侧信道攻击</strong>获得。</p>
+<p>为了让该技术成功，伪造的 <code>GSBase</code> 结构必须至少包含：</p>
+<ul>
+<li><strong>内核栈指针 pop rsp value</strong></li>
+<li>在 <strong>task_struct</strong> 相关偏移位置上的一个指针</li>
+</ul>
+<p>这样才能避免在页错误处理程序（page fault handler）中可能出现的 <strong>双重错误（double fault）</strong>。</p>
+<p>作者发现一种稳定使该劫持成功的方法是：</p>
+<p><strong>故意触发</strong> 代码访问未映射内存，造成页错误；</p>
+<p>在页错误处理程序接近中断返回（interrupt return）时<strong>覆盖栈（将page_exec_fault指针返回的位置，该位置由per-cpu指引，覆盖成pop_rsp ropchain）ropchain</strong></p>
+<p>当页错误处理程序执行时，栈会被劫持，从而导致返回处理程序时被劫持，执行攻击者指定的 <strong>ROP 链</strong>。</p>
+<p>该 ROP 链需要：gsbase&#x3D;我们控制的地址</p>
+<ul>
+<li>使用 <code>swapgs; ret</code> gadget 切换回原来的 <code>GSBase</code> 值；</li>
+<li>执行权限提升所需的步骤，例如调用 <code>commit_creds(init_cred)</code>；</li>
+<li>最后使用 <code>iret</code> 或 <code>sysret</code> 将控制流返回到用户态</li>
+</ul>
+<p>最后实现的效果是： 劫持rsp，绕过保护，劫持控制流，然后返回到用户空间</p>
+<h4><span id="eval-module-具体exp分析">Eval-module 具体exp分析</span></h4><p>首先spray THP </p>
+<p>然后guess一个 Direct Mapping Area地址，wrgsbase赋值给gsbase</p>
+<p>此时往每个被喷射的THP page对应per-cpu 偏移处写入值</p>
+<p>多线程spawn_orw_thread 根据特征值找到page 写入pop rsp ；ropchain</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://s2.loli.net/2025/08/26/3lsToXC2aBSb87I.png" alt="img" class="lazyload"></p>
+<p>在<code>entry_SYSCALL_compat</code>内核入口swapgs后切换为guess地址触发劫持(试了几个entry_SYSCALL,似乎只有这个能满足条件，但论文中也似乎没有说原因）</p>
+<p>最后调试时候发现kvm有些情况下不需要hb（疑惑.jpg），然后是最后打断点cli前下断点会调试失败，不理解.jpg</p>
+<h4><span id="cve-2023-6111-具体exp分析">CVE-2023-6111 具体exp分析</span></h4><p>Linux 内核的 netfilter： nf_tables 有uaf漏洞</p>
+<h5><span id="漏洞原因分析">漏洞原因分析</span></h5><p>在函数 <code>nft_trans_gc_catchall</code> 中，开发者忘记在参数 <code>sync</code> 为 true 时，从 <code>catchall_list</code> 中移除 catchall set element。</p>
+<p>因此，如果你创建一个带有 <code>NFT_SET_EXT_EXPIRATION</code> 的 catchall element在 pipapo set 中，就有可能多次释放同一个 catchall set element（double free）。</p>
+<p>相关代码片段：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">void</span> <span class="hljs-title function_">nft_trans_gc_queue_sync_done</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> nft_trans_gc *trans)</span><br>&#123;<br>    WARN_ON_ONCE(!lockdep_commit_lock_is_held(trans-&gt;net));<br>    <span class="hljs-keyword">if</span> (trans-&gt;count == <span class="hljs-number">0</span>) &#123;<br>        nft_trans_gc_destroy(trans);<span class="hljs-keyword">return</span>;<br>    &#125;<br>    call_rcu(&amp;trans-&gt;rcu, nft_trans_gc_trans_free);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6><span id="触发漏洞">触发漏洞</span></h6><ol>
+<li>创建一个带有 <code>NFT_SET_TIMEOUT</code> 标记的 pipapo set</li>
+<li>插入element A，带有 <code>NFT_SET_ELEM_CATCHALL</code>、<code>NFTA_SET_ELEM_TIMEOUT</code> 和 <code>NFTA_SET_ELEM_EXPIRATION</code></li>
+<li>等待几秒（让element A 超时）</li>
+<li>插入element B，触发调用链： <code>nft_set_commit_update</code> -&gt; <code>nft_pipapo_commit</code> -&gt; <code>pipapo_gc</code> -&gt; <code>nft_trans_gc_queue_sync_done</code></li>
+</ol>
+<h6><span id="泄露信息">泄露信息</span></h6><ol>
+<li>创建 pipapo <code>set A</code>，带有 <code>NFT_SET_TIMEOUT</code> 标记</li>
+<li>插入element B（带 <code>NFT_SET_ELEM_CATCHALL</code>、<code>NFTA_SET_ELEM_TIMEOUT</code> 和 <code>NFTA_SET_ELEM_EXPIRATION</code>）</li>
+<li>插入另一个element，触发漏洞，element B 被释放</li>
+<li>创建许多带 <code>NFTA_TABLE_USERDATA</code> 的表，以重新占用element B 的堆空间（长度应与element B 相同）</li>
+<li>再次插入element，触发漏洞，element B 再次被释放</li>
+<li>创建许多object（大小与element B 相同），其中一个会占用element B 的堆空间</li>
+<li>Dump 所有喷射的表，找到占用element B 堆的表，其 <code>NFTA_TABLE_USERDATA</code> 会成为object结构</li>
+</ol>
+<blockquote>
+<p>经典的堆占位</p>
+</blockquote>
+<p>object头部有一个双向链表，指向前后object，可以得到下一个object的名称和指针，可用作 ROP gadget。</p>
+<p>步骤：</p>
+<ul>
+<li>删除下一个object</li>
+<li>再次创建许多带 <code>NFTA_TABLE_USERDATA</code> 的表，占用下一个object的堆空间</li>
+</ul>
+<h6><span id="rip">RIP</span></h6><p>控制 RIP 步骤与泄露信息类似：</p>
+<ol>
+<li>创建 pipapo <code>set A</code>，with flag <code>NFT_SET_TIMEOUT</code></li>
+<li>插入element B（带 catchall、timeout、expiration）</li>
+<li>插入另一个element，触发漏洞，B 被释放</li>
+<li>创建表，占用 B 的堆空间</li>
+<li>再次触发漏洞，B 被释放</li>
+<li>创建与 B 大小相同的object，其中一个占用 B 的堆空间</li>
+<li>Dump 并找到目标表，其 <code>NFTA_TABLE_USERDATA</code> 成为object结构</li>
+<li>删除目标表，释放object堆空间</li>
+<li>喷射许多表，占用object堆空间，填充伪造object数据，覆盖 <code>object-&gt;ops</code> 控制 RIP</li>
+</ol>
+<p>关键调用点：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">static</span> <span class="hljs-type">int</span> <span class="hljs-title function_">nft_object_dump</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> sk_buff *skb, <span class="hljs-type">unsigned</span> <span class="hljs-type">int</span> attr,</span><br><span class="hljs-params">                           <span class="hljs-keyword">struct</span> nft_object *obj, <span class="hljs-type">bool</span> reset)</span><br>&#123;<br>    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">nlattr</span> *<span class="hljs-title">nest</span>;</span><br><br>    nest = nla_nest_start_noflag(skb, attr);<br>    <span class="hljs-keyword">if</span> (!nest)<br>        <span class="hljs-keyword">goto</span> nla_put_failure;<br><br>    <span class="hljs-comment">/* 覆盖 ops 后，这里会控制 RIP */</span><br>    <span class="hljs-keyword">if</span> (obj-&gt;ops-&gt;dump(skb, obj, reset) &lt; <span class="hljs-number">0</span>)<br>        <span class="hljs-keyword">goto</span> nla_put_failure;<br><br>    nla_nest_end(skb, nest);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br><br>nla_put_failure:<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>伪造object数据：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-comment">// ops 是我们填入 NFTA_OBJ_USERDATA 的指针</span><br><span class="hljs-comment">// ops+0x20 是 ops-&gt;dump</span><br>*(<span class="hljs-type">uint64_t</span> *)&amp;ops[<span class="hljs-number">0x20</span>] = kernel_off + <span class="hljs-number">0xffffffff8198954b</span>; <span class="hljs-comment">// push rsi ; jmp qword ptr [rsi + 0x39]</span><br><br><span class="hljs-comment">// 第一次栈迁移</span><br>*(<span class="hljs-type">uint64_t</span> *)(&amp;leak_obj[<span class="hljs-number">0x39</span>]) = kernel_off + <span class="hljs-number">0xffffffff811b365b</span>; <span class="hljs-comment">// pop rsp ; ret</span><br>*(<span class="hljs-type">uint64_t</span> *)(&amp;leak_obj[<span class="hljs-number">0</span>]) = kernel_off + <span class="hljs-number">0xffffffff811b365b</span>; <span class="hljs-comment">// pop rsp ; ret</span><br>*(<span class="hljs-type">uint64_t</span> *)(&amp;leak_obj[<span class="hljs-number">8</span>]) = target_rop + <span class="hljs-number">0x60</span>; <span class="hljs-comment">// 最终跳转到目标 ROP</span><br>*(<span class="hljs-type">uint64_t</span> *)(&amp;leak_obj[<span class="hljs-number">0x80</span>]) = target_rop; <span class="hljs-comment">// obj-&gt;ops = 我们的目标 ROP</span><br></code></pre></td></tr></table></figure>
+
+<p>ROP 执行步骤：</p>
+<ol>
+<li><code>obj-&gt;ops-&gt;dump(skb, obj, reset)</code></li>
+<li>执行 <code>push rsi ; jmp qword ptr [rsi + 0x39]</code>（RSI 是object指针）</li>
+<li>执行 <code>pop rsp ; ret</code>，栈迁移到object指针</li>
+<li>再次 <code>pop rsp ; ret</code>，栈迁移到 <code>target_rop + 0x60</code>（即 NFTA_OBJ_USERDATA + 0x60）</li>
+<li>现在可以执行正常的 ROP 链</li>
+</ol>
+<h5><span id="how-to-change-to-swapgs">How to change to swapgs</span></h5><p>其实也没什么好分析的，可以只要覆盖ops函数表的open指针修改为eval_module exp的<code>entry_SYSCALL_compat</code>函数即可，原先是执行rop迁移栈完成控制流劫持</p>
+<p>其他spray THP等步骤并无不同</p>
+<h2><span id="4x-cr0x2fcr4-popfretspill-idt">4.x CR0&#x2F;CR4 popf+retspill IDT</span></h2><p>后面这些是一些在aarch or x86_64 gadget应用，其中一些需要stack的控制之类的，算是rop的扩展，感觉并没有产生全新的劫持方法</p>
+<h1><span id="5验证poc以及realworld案例">5.验证poc以及realworld案例</span></h1><p>通过人为编写模块来验证，以及对多个cve改写exp来验证是否可行</p>
+<p>主要讲述了CVE-2024-26925，CVE-2024-1085 </p>
+<p>以及对fineIBT的研究，qemu中没法模拟cet，这里也懒得深入探究防护机制了</p>
+<h1><span id="6mitigations">6.Mitigations</span></h1><h2><span id="61-mitigating-swapgs">6.1 Mitigating swapgs</span></h2><p>建议对来自用户空间的GSbase进行检查，例如执行rdmsr指令来进行</p>
+<h2><span id="62-mitigating-cr0-cr4">6.2 Mitigating cr0 cr4</span></h2><p>给那些没有check的gadget加上check</p>
+<h2><span id="63-mitigating-lidt">6.3 Mitigating lidt</span></h2><p>《请输入文本》</p>
+<h1><span id="7discussion">7.discussion</span></h1><p>ropgadget等gadget工具和angrrop各有优劣，一些无法利用的系统寄存器</p>
+<p>swapgs办法是通用的，目前手动的工作包括识别per-cpu变量偏移量、要覆盖的伪造stack的偏移量、构建用于权限提升的 ROP 链，以及将控制流目标为其中一个系统调用入口点。</p>
+<h1><span id="8conclusion">8.Conclusion</span></h1><p>完结撒花，非常cool的应用</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://xxhqd1bk0q6.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDU5MTcxYTZmZDRlODIwMGRjMDg2ZjM2NmU5YjI1YzdfcmxZMjJIV0g1RzdtbDVZcENGbFRka0twbk42WjBzakJfVG9rZW46WVU2d2JUaENqb3RNU0V4QjQ1dWNMampXblNkXzE3NTYxNzg1Mjk6MTc1NjE4MjEyOV9WNA" alt="img" class="lazyload"></p>
+<h1><span id="9open-science">9.open science</span></h1><p>“Our artifacts have been made available at <a target="_blank" rel="noopener" href="https://doi.org/10.5281/zenodo.14728440">https://doi.org/10.5281/zenodo.14728440</a>.”</p>
+<p>《感谢x圣开源》orz</p>
+<h1><span id="10个人总结">10.个人总结</span></h1><p>总之，这种利用手法需要劫持控制流，一般是通过劫持返回地址或者劫持某些结构体的ops来实现的调用entry</p>
+<p>算是对stack privot这种攻击的补强（很好的补强，让我的漏洞旋转）</p>
+<p>先前对于劫持控制流，似乎多是寻找gadget关闭smap并劫持rsp，或者是5.12对pt_reg攻击（后面有随机偏移）</p>
+<p>相比data-only攻击还是弱半档的存在</p>
+
+	</article>
+
+	 
+    <div class="kira-post-copyright">
+        <strong>本文作者：</strong>一叶梦花<br>
+        <strong>本文链接：</strong><a href="http://example.com/2025/08/26/System_registers/" title="http:&#x2F;&#x2F;example.com&#x2F;2025&#x2F;08&#x2F;26&#x2F;System_registers&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;example.com&#x2F;2025&#x2F;08&#x2F;26&#x2F;System_registers&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+  
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			
+		</nav>
+	</div>
+	
+	<div class="kira-post-meta kira-rainbow">
+		
+		
+	</div>
+	
+	<div class="kira-post-footer">
+		
+
+		
+	<div class="giscus"></div>
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="-your github username-/-your giscus repo-"
+      data-repo-id="-your giscus repo ID-"
+      data-category="Announcements"
+      data-category-id="-giscus category id-"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async  
+    ></script>
+  
+
+	</div>
+	
+</div>
+
+				</div>
+			</div>
+			<div class="kira-right-column">
+	<a onclick="document.querySelector('#kira-top-header').scrollIntoView({behavior: 'smooth'});" class="kira-backtotop" aria-label="回到顶部" title="回到顶部">
+		<button class="mdui-fab mdui-ripple">
+			<i class="kirafont icon-caret-up"></i>
+		</button>
+	</a>
+</div>
+
+		</div>
+	</body>
+</html>
