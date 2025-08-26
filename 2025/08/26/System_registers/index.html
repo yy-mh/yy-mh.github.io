@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/css/layout.css">
 
 		
-		<title> 一叶梦花的博客</title>
+		<title> 2025 usenix System Register Hijacking -  一叶梦花的博客</title>
 		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
 		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
 		
@@ -85,7 +85,7 @@
 	</div>
 	<div class="kira-count">
 		<div><span>文章</span>3</div>
-		<div><span>标签</span>2</div>
+		<div><span>标签</span>3</div>
 		<div><span>分类</span>0</div>
 	</div>
 	<div class="kira-list">
@@ -229,7 +229,7 @@
 			
 	<div class="kira-widget-wrap">
 		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
-			<a href="/tags/%E4%B9%A6%E8%AF%84/" style="font-size: 10px;">书评</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 10px;">杂谈</a>
+			<a href="/tags/%E4%B9%A6%E8%AF%84/" style="font-size: 10px;">书评</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 10px;">杂谈</a> <a href="/tags/%E8%AE%BA%E6%96%87%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">论文学习</a>
 		</div>
 		
 	</div>
@@ -326,17 +326,14 @@
 <div class="kira-post">
 	<article>
 		
-		<div
-			class="kira-post-cover"
-			style="padding-bottom: '56.25%'"
-		>
+		<div class="kira-post-cover">
 			<img
-				data-src="https://s2.loli.net/2025/08/25/1OVBFCj9w63Q5pZ.jpg"
+				data-src="https://s2.loli.net/2025/08/26/sWngu9Nd1GFiQXq.jpg"
 				data-sizes="auto"
-				alt=""
+				alt="2025 usenix System Register Hijacking"
 				class="lazyload kira-post-cover-image disabled-kira-image"
 			/>
-			<h1></h1>
+			<h1>2025 usenix System Register Hijacking</h1>
 		</div>
 		
 		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
@@ -366,7 +363,7 @@
 <h2><span id="23-kaslr-bypass">2.3 kaslr bypass</span></h2><p>由于各种架构的测信道存在，开启与否并无影响，认为与本地攻击场景无关，可以不开启</p>
 <h2><span id="24-smap-and-pan-bypasses">2.4 SMAP and PAN Bypasses</span></h2><p>用户数据不可访问</p>
 <h2><span id="25-kernel-page-table-isolation">2.5 Kernel Page Table Isolation</span></h2><p>KPTI，简单来说如图所示，内核用户页表分隔</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://xxhqd1bk0q6.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmQ3NTFjN2I1MGNlMDg3Y2FlMDFjNThjNjY2MDA0YjhfdXpMTG5UdW85dmJDYnNoN3J2MmZXbWxaRG1jbXk5VndfVG9rZW46WHI0M2JLREJkb1owS0h4RUNjVGNOblljbjFmXzE3NTYxNzg1Mjk6MTc1NjE4MjEyOV9WNA" alt="img" class="lazyload"></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://s2.loli.net/2025/08/26/EMVv7LBsRW3PAxT.png" alt="img" class="lazyload"></p>
 <h2><span id="26-x86-64-fsgsbase-extension">2.6 x86-64 FSGSBASE Extension</span></h2><p>这个扩展支持了用户态对gsbase和fsbase直接读取和修改的指令</p>
 <p>文章引用cve-2019-1125，我印象中这个指令在CTF中也被使用过<a target="_blank" rel="noopener" href="https://blog.zolutal.io/corctf-sysruption/">corCTF 2023: sysruption writeup</a>，而这篇blog作者似乎与论文作者都是同一个学校（笑，orz）</p>
 <h2><span id="27-per-cpu">2.7 per-cpu</span></h2><p><strong>GSBase → 指向当前 CPU 的 per-CPU 数据块的基地址</strong></p>
@@ -518,6 +515,8 @@
 	
 	<div class="kira-post-meta kira-rainbow">
 		
+		
+			<a class="kirafont icon-tag-fill -none-link" href="/tags/%E8%AE%BA%E6%96%87%E5%AD%A6%E4%B9%A0/" rel="tag">论文学习</a>
 		
 	</div>
 	
